@@ -221,9 +221,9 @@ body {
 
 .weatherwidget-io {
     position: absolute;
-    -moz-transform: scale(0.9);
+    transform: scale(0.9);
     left: -7%;
     width: 95%;
-    -moz-transform: translate(0, 100, 0);
+    transform: translate(0, 100, 0);
     border-radius: 25px;
 }
