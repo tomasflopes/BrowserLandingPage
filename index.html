@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Página Inicial</title>
-    <link rel="shortcut icon" href="./Image/favicon.ico.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./Image/favicon.ico.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto Font -->
     <script src="main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <form class="Form" action="https://www.google.com/search" method="GET">
-        <div id="search-box">
-            <input class="texto" type="text" name="q" placeholder="Procurar">
-            <a id="search-btn" href="https://www.google.com/search">
-                <i class="fas fa-search"> </i>
-            </a>
-        </div>
+      <div id="search-box">
+        <input class="texto" type="text" name="q" placeholder="Procurar" />
+        <a id="search-btn" href="https://www.google.com/search">
+          <i class="fas fa-search"> </i>
+        </a>
+      </div>
     </form>
 
     <div class="icons">
-        <a id="fb" href="https://www.facebook.com">
-            <i class="fab fa-facebook-f"></i>
-        </a>
+      <a id="fb" href="https://www.facebook.com">
+        <i class="fab fa-facebook-f"></i>
+      </a>
 
-        <a id="google" href="https://www.google.com">
-            <i class="fab fa-google"></i>
-        </a>
+      <a id="google" href="https://www.google.com">
+        <i class="fab fa-google"></i>
+      </a>
 
-        <a id="yt" href="https://www.youtube.com">
-            <i class="fab fa-youtube"></i>
-        </a>
+      <a id="yt" href="https://www.youtube.com">
+        <i class="fab fa-youtube"></i>
+      </a>
 
-        <a class="btn" href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
-        </a>
+      <a class="btn" href="https://twitter.com">
+        <i class="fab fa-twitter"></i>
+      </a>
 
-        <a id="twitch" href="https://www.twitch.com">
-            <i class="fab fa-twitch"></i>
-        </a>
+      <a id="twitch" href="https://www.twitch.com">
+        <i class="fab fa-twitch"></i>
+      </a>
 
-        <a id="insta" href="https://instagram.com">
-            <i class="fab fa-instagram"></i>
-        </a>
+      <a id="insta" href="https://instagram.com">
+        <i class="fab fa-instagram"></i>
+      </a>
 
-        <a id="webapp" href="https://www.easports.com/fifa/ultimate-team/web-app/">
-            <i class="fas fa-futbol"></i>
-        </a>
+      <a
+        id="webapp"
+        href="https://www.easports.com/fifa/ultimate-team/web-app/"
+      >
+        <i class="fas fa-futbol"></i>
+      </a>
 
-        <a id="steam" href="https://steamcommunity.com/">
-            <i class="fab fa-steam"></i>
-        </a>
+      <a id="steam" href="https://steamcommunity.com/">
+        <i class="fab fa-steam"></i>
+      </a>
     </div>
 
     <div class="horas">
-        <h1 id="numeros"></h1>
+      <h1 id="numeros"></h1>
     </div>
 
-    <a class="weatherwidget-io" href="https://forecast7.com/pt/41d01n8d64/espinho/" data-label_1="ESPINHO"
-        data-label_2="METEOROLOGIA" data-icons="Climacons Animated" data-days="5" data-theme="original"
-        data-basecolor="#2d3436" data-textcolor="#c1c1c1" data-highcolor="#ab3535" data-lowcolor="#7193c2"
-        data-suncolor="#8f9100" data-cloudfill="#0e2636" data-raincolor="#3498db" id="weatherwidget">
-        ESPINHO METEOROLOGIA
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/pt/41d01n8d64/espinho/"
+      data-label_1="ESPINHO"
+      data-label_2="METEOROLOGIA"
+      data-icons="Climacons Animated"
+      data-days="5"
+      data-theme="original"
+      data-basecolor="#2d3436"
+      data-textcolor="#c1c1c1"
+      data-highcolor="#ab3535"
+      data-lowcolor="#7193c2"
+      data-suncolor="#8f9100"
+      data-cloudfill="#0e2636"
+      data-raincolor="#3498db"
+      id="weatherwidget"
+    >
+      ESPINHO METEOROLOGIA
     </a>
 
     <script>
-        ! function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://weatherwidget.io/js/widget.min.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js, fjs);
         }
-        (document, 'script', 'weatherwidget-io-js');
+      })(document, 'script', 'weatherwidget-io-js');
     </script>
 
     <div class="creditos">
-        <label for="creditoss">Tomás Lopes 04-11-2018 ©</label>
+      <label for="creditoss">Tomás Lopes 04-11-2018 ©</label>
     </div>
 
-    <script src="clock.js"></script>
-</body>
+    <input
+      type="button"
+      id="toggleDynamicColors"
+      value="Toggle Dynamic Colors"
+      class="off"
+    />
 
+    <script src="clock.js"></script>
+  </body>
 </html>
